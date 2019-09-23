@@ -2,7 +2,16 @@
 <html>
     <head>
         <title>EECS 448 Lab 3</title>
-        <script></script>
+        <script>
+            function validate(id1, id2) {
+                if(document.getElementById(id1) == document.getElementById(id2)) {
+                    document.getElementById("msg1").innerHTML = "Password validated!";
+                }
+                else {
+                    document.getElementById("msg1").innerHTML = "Passwords do not match."
+                }
+            }
+        </script>
     </head>
     <body>
         <h1>Exercise 1: Password Validator</h1>
@@ -11,8 +20,9 @@
             <form>
                 <input type="text" id="pw1">
                 <input type="text" id="pw2">
-                <input type="submit" id="valButton" value="Validate">
+                <input type="button" id="valButton" value="Validate" onclick="validate(pw1, pw2)">
             </form>
+            <p id="msg1"></p>
         </div>
     </body>
 </html>
