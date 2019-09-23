@@ -1,20 +1,21 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>EECS 448 Lab 3</title>
-        <script>
-        </script>
+        <meta charset="UTF-8">
+        <title>Exercise 1: Password Validator | EECS448 Lab 3</title>
+        <script>src="validate.js"</script>
     </head>
     <body>
-        <h1>Exercise 1: Password Validator</h1>
-        <div>
-            <p>Enter the same password twice.</p>
+        <h1 align="center">Exercise 1: Password Validator</h1>
+        <div align="center">
+            <p>Enter the same password twice.  Passwords must be at least 8 characters long.</p>
             <form>
-                <input type="text" id="pw1">
-                <input type="text" id="pw2">
+                <input type="text" id="pw1"><br>
+                <input type="text" id="pw2"><br>
                 <input type="button" id="valButton" value="Validate" onclick="validate(pw1, pw2)">
             </form>
-            <p id="msg1"></p>
+            <p id="msg1" style="color:red">test</p>
+            <p id="valmsg"></p>
         </div>
     </body>
 </html>
