@@ -4,20 +4,30 @@ function validate(id1, id2) {
     if(checkEqual(input1, input2) && checkLength(input1, input2)) {
         document.getElementById("valmsg").innerHTML = "Password validated!";
     }
+    else {
+        document.getElementById("valmsg").innerHTML = "Password rejected.";
+    }
 }
 
+function checkEqual(input1, input2) {
+    if(input1 == input2) {
+        document.getElementById("msg1").innerHTML = "";
         return true;
     }
     else {
-        document.getElementById("msg1").innerHTML = "Passwords do not match."
+        document.getElementById("msg1").innerHTML = "Passwords do not match.";
         return false;
     }
 }
 
-function checkLength(id1, id2) {
-    if((pw1.length <= 8) || (pw2.length <=8))
+function checkLength(input1, input2) {
+    if((input1.length < 8) || (input2.length <8))
     {
         document.getElementById("msg2").innerHTML = "Password must be at least 8 characters long.";
+        return false;
+    }
+    else {
+        document.getElementById("msg2").innerHTML = "";
         return true;
     }
 }
