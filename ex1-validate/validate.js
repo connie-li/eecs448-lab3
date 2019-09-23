@@ -1,3 +1,8 @@
+function validate(id1, id2) {
+    checkEqual(id1, id2);
+    checkLength(id1, id2);
+}
+
 function checkEqual(id1, id2) {
     let pw1 = document.getElementById(id1);
     let pw2 = document.getElementById(id2);
