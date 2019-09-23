@@ -1,7 +1,9 @@
 function validate(id1, id2) {
     let input1 = document.getElementById(id1).value;
     let input2 = document.getElementById(id2).value;
-    if(checkEqual(input1, input2) && checkLength(input1, input2)) {
+    let eq = checkEqual(input1, input2);
+    let len = checkLength(input1, input2);
+    if(eq && len) {
         document.getElementById("valmsg").innerHTML = "Password validated!";
     }
     else {
