@@ -2,16 +2,25 @@ let index = 0;
 let numSlides = 5;
 showSlide(0);
 
+/**
+ * Shows the slide of the given index.
+ * @param {number} slideIndex - the index of the slide, which is the id attribute of its enclosing div.
+ */
 function showSlide(slideIndex) {
 	document.getElementById(slideIndex).style.display = "block";
 }
 
+/**
+ * Hides the slide of the given index.
+ * @param {number} slideIndex - the index of the slide, which is the id attribute of its enclosing div.
+ */
 function hideSlide(slideIndex) {
 	document.getElementById(slideIndex).style.display = "none";
 }
 
 /**
- * hide current img, change index, show next/prev img
+ * Handle button clicks for both Next and Previous buttons.
+ * @param {number} direction - (1) for Next, (-1) for Previous.
  */
 function buttonClick(direction) {
 	// show next image
