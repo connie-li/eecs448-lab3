@@ -5,7 +5,7 @@ h1 {
     font-size: 450%;
     margin-bottom: 30px;
     margin-top: 10px;
-    letter-spacing: .7rem;
+    letter-spacing: .5rem;
 }
 
 body {
@@ -14,25 +14,81 @@ body {
     background: #363636;
 }
 
-#content {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-iframe {
-    width: 640px;
-    height: 360px;
-}
-
 a {
     color: #bf0802;
 }
 
-li {
-    text-indent: 20px;
+a:hover {
+    color: #ff0800;
+}
+
+/* Used CSS from https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity to create a translucent background image. Accessed 2019-09-29. 
+.background {
+    position: relative;
+    overflow: hidden;
+    background: #363636;
+}
+
+.background:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.15;
+    background-image: url(https://i2.wp.com/fourflowerswellness.com/wp-content/uploads/2018/01/1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+*/
+#content {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitle {
+    font-size: 150%;
+    margin: auto;
+}
+
+#bio {
+    margin: 20px;
+}
+
+#bio-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: auto;
+}
+
+#websites {
+    margin: 20px;
+}
+ul {
+    list-style-position: outside;
+    margin: auto;
+}
+
+#vid-container {
+    margin: 20px;
+}
+
+iframe {
+    width: 450px;
+    height: 253px;
+    margin: 10px;
 }
 
 #vid {
-    padding-top: 20px;
+    margin: none;
+    text-align: center;
 }
