@@ -1,0 +1,6 @@
+Works Cited: 
+
+In order to create the translucent "background image", I borrowed CSS styles from 
+    https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity, and
+    https://css-tricks.com/snippets/css/transparent-background-images/.
+I accessed both sites on 2019-09-29.    
