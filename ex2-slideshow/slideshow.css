@@ -1,9 +1,55 @@
+body {
+	background: #2b2b2b;
+}
+
+h1 {
+	color: white;
+	font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#buttonBox {
+	padding: 10px 10px;
+    display:inline-block;
+    width: 250px;
+}
+
+.button {
+    padding: 5px 0px;
+    width: 100px;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: bold;
+    background: #e6e6e6;
+    
+}
+
+#prev {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.caption {
+	color: white;
+	font-family: sans-serif;
+	font-size: 14;
+	padding: 20px;
+}
+
+a {
+	color: #d10000;
+}
+
 .pic {
 	display: none;
 }
 
 img {
-	width: 400px;
+	width: 470px;
 	margin-left: auto;
 	margin-right: auto;
 }
