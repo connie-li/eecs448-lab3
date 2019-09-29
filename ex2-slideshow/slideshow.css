@@ -1,4 +1,9 @@
 .pic {
-	width:400px;
 	display: none;
+}
+
+img {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
