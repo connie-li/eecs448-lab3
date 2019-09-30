@@ -4,26 +4,27 @@
 		<meta charset="UTF-8">
         <title>Exercise 4: CSS Manipulation | EECS 448</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="transform.js"></script>
 	</head>
 	<body>
         <h1>Exercise 4: CSS Manipulation</h1>
         <div id="border">
             <h3>Border settings:</h3>
             <form>
-                <div>Red value: <input type="number" name="border-red"></div>
-                <div>Green value: <input type="number" name="border-green"></div>
-                <div>Blue value: <input type="number" name="border-blue"></div>
+                <div>Red value: <input type="number" name="border-red" min="0" max="255"></div>
+                <div>Green value: <input type="number" name="border-green" min="0" max="255"></div>
+                <div>Blue value: <input type="number" name="border-blue" min="0" max="255"></div>
                 <div>Width: <input type="number" name="border-width"></div>
             </form>
         </div>
         <div id="background">
             <h3>Background settings: </h3>
             <form>
-                <div>Red value: <input type="number" name="bg-red"></div>
-                <div>Green value: <input type="number" name="bg-green"></div>
-                <div>Blue value: <input type="number" name="bg-blue"></div>
+                <div>Red value: <input type="number" name="bg-red" min="0" max="255"></div>
+                <div>Green value: <input type="number" name="bg-green" min="0" max="255"></div>
+                <div>Blue value: <input type="number" name="bg-blue" min="0" max="255"></div>
             </form>
         </div>
-        <div id="button"><button type="button" name="submit">Change!</button></div>
+        <div id="button"><button type="button" name="submit">Transform!</button></div>
     </body>
 </html>
