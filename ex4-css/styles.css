@@ -6,15 +6,24 @@ body {
     max-width: 60%;
 }
 
+h1 {
+    text-align: center;
+}
+
 #contents {
     border: solid;
     border-width: thin;
     border-color: black;
-    border-radius: 5px
+    border-radius: 5px;
+    text-align: center;
+}
+
+input {
+    max-width: 40px;
 }
 
 #button {
-    margin-top: 20px;
+    margin: 20px;
 }
 
 button {
