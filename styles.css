@@ -1,0 +1,36 @@
+body {
+    font-family: "Segoe UI Light", sans-serif;
+    color: white;
+    background-color: #363636;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #b80404;
+}
+
+#contents {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    margin-bottom: 0px;
+}
+
+#subheader {
+    margin-top: 0px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin: auto;
+}
