@@ -11,15 +11,15 @@ h1 {
 body {
     font-family: "Segoe UI Light", sans-serif;
     color: white;
-    background: #363636;
+    background-color: #363636;
 }
 
 a {
-    color: #bf0802;
+    color: white;
 }
 
 a:hover {
-    color: #ff0800;
+    color: #04b834;
 }
 
 /* Used CSS from https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity and https://css-tricks.com/snippets/css/transparent-background-images/ to create a translucent background image. Accessed 2019-09-29. */
@@ -31,7 +31,7 @@ a:hover {
 
 .background::after {
     content: "";
-    background: url(https://i2.wp.com/fourflowerswellness.com/wp-content/uploads/2018/01/1.png);
+    background-image: url(https://i2.wp.com/fourflowerswellness.com/wp-content/uploads/2018/01/1.png);
     opacity: 0.15;
     top: 0;
     left: 0;
@@ -48,6 +48,7 @@ a:hover {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #content {
@@ -59,6 +60,17 @@ a:hover {
 .subtitle {
     font-size: 150%;
     margin: auto;
+}
+
+.body-text {
+    font-size: 105%
+}
+
+#pic {
+    display: block;
+    max-width: inherit;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #bio {
